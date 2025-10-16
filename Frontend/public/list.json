@@ -1,59 +1,68 @@
 [
     {
         "id": 1,
+        "name": "A Tale of Two Cities",
+        "price": "0",
         "category": "Free",
-        "title": "A Tale of Two Cities",
-        "author": "Charles Dickens",
-        "type": "Fiction",
+        "title": "Story Fiction",
         "image": "./assets/bookStack.png"
     },
     {
         "id": 2,
+        "name": "Rabbit and Tortoise",
+        "price": "0",
         "category": "Free",
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "type": "Science Fiction",
+        "title": "StoryBook",
         "image": "./assets/bookStack.png"
     },
     {
         "id": 3,
+        "name": "When I Met Her",
+        "price": "0",
         "category": "Free",
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "type": "Fantasy",
+        "title": "Rom-com",
         "image": "./assets/bookStack.png"
     },
     {
         "id": 4,
+        "name": "Haunted School",
+        "price": "0",
         "category": "Free",
-        "title": "The Hound of the Baskervilles",
-        "author": "Arthur",
-        "type": "Mystery",
+        "title": "Horror",
         "image": "./assets/bookStack.png"
     },
     {
         "id": 5,
+        "name": "Art of Manipulation",
+        "price": "0",
         "category": "Free",
-        "title": "The Book Thief",
-        "author": "Markus Zusak",
-        "type": "Historical",
+        "title": "Self Help",
         "image": "./assets/bookStack.png"
     },
 
     {
         "id": 6,
+        "name": "Rocking School",
+        "price": "0",
         "category": "Free",
-        "title": "The Diary of a Young Girl",
-        "author": "Anne Frank", 
-        "type": "Biography",
-        "image": "./assets/bookStack.png"},
+        "title": "Adventure",
+        "image": "./assets/bookStack.png"
+    },
 
     {
-        "id": 7,    
+        "id": 7,
+        "name": "Dancing Wolves",
+        "price": "0",
         "category": "Free",
-        "title": "The Power of Habit",  
-        "author": "Charles Duhigg",
-        "type": "Self-Help",
-        "image": "./assets/bookStack.png"    
+        "title": "Fiction",
+        "image": "./assets/bookStack.png"
+    },
+    {
+        "id": 8,
+        "name": "It ends with us",
+        "price": "70",
+        "category": "Paid",
+        "title": "Romance",
+        "image": "./assets/bookStack.png"
     }
 ]
