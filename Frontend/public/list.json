@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "category": "Free",
+        "title": "A Tale of Two Cities",
+        "author": "Charles Dickens",
+        "type": "Fiction",
+        "image": "./assets/bookStack.png"
+    },
+    {
+        "id": 2,
+        "category": "Free",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "type": "Science Fiction",
+        "image": "./assets/bookStack.png"
+    },
+    {
+        "id": 3,
+        "category": "Free",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "type": "Fantasy",
+        "image": "./assets/bookStack.png"
+    },
+    {
+        "id": 4,
+        "category": "Free",
+        "title": "The Hound of the Baskervilles",
+        "author": "Arthur",
+        "type": "Mystery",
+        "image": "./assets/bookStack.png"
+    },
+    {
+        "id": 5,
+        "category": "Free",
+        "title": "The Book Thief",
+        "author": "Markus Zusak",
+        "type": "Historical",
+        "image": "./assets/bookStack.png"
+    },
+
+    {
+        "id": 6,
+        "category": "Free",
+        "title": "The Diary of a Young Girl",
+        "author": "Anne Frank", 
+        "type": "Biography",
+        "image": "./assets/bookStack.png"},
+
+    {
+        "id": 7,    
+        "category": "Free",
+        "title": "The Power of Habit",  
+        "author": "Charles Duhigg",
+        "type": "Self-Help",
+        "image": "./assets/bookStack.png"    
+    }
+]
