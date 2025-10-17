@@ -1,26 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import Cards from './Cards'
+import React, { useEffect, useState } from "react";
+import Cards from "./Cards";
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import axios from "axios";
 
 export default function Freebook() {
-  const [list, setList] = useState([])
-
+  const [book, setBook] = useState([]);
   useEffect(() => {
-    fetch('/list.json')
-      .then((res) => res.json())
-      .then((data) => setList(data))
-      .catch((err) => {
-        console.error('Failed to load /list.json', err)
-        setList([])
-      })
-  }, [])
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/book");
 
-  const filterData = (list || []).filter((data) => data && data.category === 'Free')
+        const data = res.data.filter(
+          (data) => data && data.category === "Free"
+        );
+        console.log(data);
+        setBook(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
 
-  const slidesToShowCount = Math.min(3, filterData.length || 1)
+  const slidesToShowCount = Math.min(3, book.length || 1);
 
   const settings = {
     dots: true,
@@ -55,7 +60,7 @@ export default function Freebook() {
         },
       },
     ],
-  }
+  };
 
   return (
     <>
@@ -71,12 +76,12 @@ export default function Freebook() {
 
         <div className="pb-12">
           <Slider {...settings}>
-            {filterData.map((item) => (
+            {book.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
           </Slider>
         </div>
       </div>
     </>
-  )
+  );
 }

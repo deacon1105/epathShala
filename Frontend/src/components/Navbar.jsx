@@ -1,8 +1,12 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import Login from "./Login";
+import Logout from "./Logout";
+import { useAuth } from "../context/AuthProvider";
 
 function Navbar() {
+  const [authUser, setAuthUser] = useAuth();
+
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -187,7 +191,9 @@ function Navbar() {
             </label>
           </div>
 
-          <div>
+          {authUser ? (<Logout />) : (  
+
+           <div>
             <a className="btn hover:bg-slate-600"
             onClick={() =>
                     document.getElementById("my_modal_2").showModal()
@@ -195,7 +201,8 @@ function Navbar() {
                     Login
                     </a>
                     <Login/>
-          </div>
+          </div> 
+          )}
         </div>
       </div>
     </div>
