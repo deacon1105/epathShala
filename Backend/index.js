@@ -11,7 +11,7 @@ const app = express()
 app.use(cors()); //to allow cross-origin requests
 app.use(express.json()); //json data ko parse krne k liye jo postman se aata hai
 
-dotenv.config()
+dotenv.config() // to use .env file
 
 const PORT = process.env.PORT || 4000
 const URI = process.env.MongoDBURI
