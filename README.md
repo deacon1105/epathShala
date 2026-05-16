@@ -1,4 +1,4 @@
-# 📚 MERN Book Store Web Application
+# 📚 epathShala - A MERN Book Store Web Application
 
 A full-stack **Book Store Web Application** built using the **MERN Stack (MongoDB, Express, React, Node.js)**.  
 This platform allows users to browse free books and securely access premium content through authentication.
